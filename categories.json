@@ -1,0 +1,11 @@
+[
+{ "id": "action", "name": "Action" },
+{ "id": "fps", "name": "Shooter" },
+{ "id": "pcvr", "name": "PCVR" },
+{ "id": "sim", "name": "Simulator" },
+{ "id": "leaked", "name": "Leaked" },
+{ "id": "vr", "name": "QUEST-VR" },
+{ "id": "horror", "name": "Horror" },
+{ "id": "sandbox", "name": "Sandbox" },
+{ "id": "tools", "name": "Tools" }
+]
