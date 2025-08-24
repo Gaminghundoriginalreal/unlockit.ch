@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>unlockit — Compliance Notice</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="UnlockIt (unlockit.ch) has been taken offline following EU enforcement. Read our statement, apology, and FAQ." />
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --card: rgba(255,255,255,0.06);
+      --border: rgba(255,255,255,0.12);
+      --muted: #a3a3a3;
+      --text: #f3f3f3;
+      --ring: rgba(59,130,246,0.25);
+      --radius: 22px;
+      --shadow: 0 20px 50px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.04) inset;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; color: var(--text); background: var(--bg); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height: 1.6;
+    }
+    /* Background gradients + grid */
+    .bgfx {
+      position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background:
+        radial-gradient(1200px 600px at 50% -10%, #3b82f6 0%, rgba(0,0,0,0) 60%),
+        radial-gradient(800px 400px at 80% 20%, #22d3ee 0%, rgba(0,0,0,0) 60%),
+        radial-gradient(800px 600px at 20% 80%, #a78bfa 0%, rgba(0,0,0,0) 60%);
+      opacity: .30;
+    }
+    .gridfx { position: fixed; inset:0; z-index: -1; pointer-events:none; background:
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 24px 24px; opacity:.08; }
+
+    .container { max-width: 1040px; margin: 0 auto; padding: 24px; }
+    header { display:flex; align-items:center; justify-content:space-between; padding: 24px 0; }
+    .brand { display:flex; align-items:center; gap:12px; }
+    .logo { height: 40px; width:40px; display:grid; place-items:center; background: rgba(255,255,255,0.08); border-radius: 16px; backdrop-filter: blur(6px); }
+    .title { margin:0; font-weight: 700; letter-spacing: -0.02em; font-size: 20px; }
+    .subtitle { margin:0; color: var(--muted); font-size: 12px; }
+    .badge { display:flex; align-items:center; gap:8px; color:#d4d4d4; font-size:12px; }
+
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: clamp(18px, 3.5vw, 44px); box-shadow: var(--shadow); backdrop-filter: blur(10px); }
+    .chips { display:flex; flex-wrap:wrap; gap:10px; margin-top: 14px; }
+    .chip { border:1px solid var(--border); background: rgba(255,255,255,0.04); border-radius: 999px; padding: 8px 12px; font-size: 13px; color:#d4d4d4; }
+
+    h2 { font-size: clamp(28px, 3.4vw, 40px); margin:0 0 8px; letter-spacing:-0.02em; }
+    h3 { font-size: 20px; margin:0 0 8px; }
+    p { color: #e5e5e5; margin: 0 0 14px; }
+
+    .fadeup { opacity: 0; transform: translateY(14px); animation: fadeup .7s ease forwards; }
+    .fadeup.d1 { animation-delay: .05s; }
+    .fadeup.d2 { animation-delay: .1s; }
+    .fadeup.d3 { animation-delay: .15s; }
+    @keyframes fadeup { to { opacity:1; transform: translateY(0); } }
+
+    .grid { display: grid; gap: 18px; grid-template-columns: 1fr; }
+    @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
+
+    .faq { display:flex; flex-direction:column; gap: 12px; }
+    .faq h4 { margin:0 0 6px; font-size: 16px; }
+    .muted { color: var(--muted); }
+
+    .list { display:grid; gap:10px; grid-template-columns: 1fr; }
+    @media (min-width: 720px) { .list { grid-template-columns: repeat(2,1fr); } }
+    @media (min-width: 980px) { .list { grid-template-columns: repeat(3,1fr); } }
+    .pill { border:1px solid var(--border); background: rgba(255,255,255,0.05); border-radius: 14px; padding: 12px 14px; font-size: 14px; color:#e5e5e5; }
+
+    footer { text-align:center; color: var(--muted); font-size:12px; margin: 28px 0 8px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+    /* Icon styles */
+    .icon { width: 20px; height: 20px; display:inline-block; vertical-align:middle; }
+    .icon-lg { width: 28px; height: 28px; }
+    .icon-wrap { height: 48px; width: 48px; display:grid; place-items:center; background: rgba(255,255,255,0.1); border-radius: 16px; }
+
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+  <div class="bgfx" aria-hidden="true"></div>
+  <div class="gridfx" aria-hidden="true"></div>
+
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <!-- lock icon -->
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <div>
+          <p class="title">unlockit</p>
+          <p class="subtitle">unlockit.ch</p>
+        </div>
+      </div>
+      <div class="badge">
+        <!-- shield-check -->
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+        <span>Compliance Notice</span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero / Notice -->
+      <section class="card fadeup">
+        <div style="display:flex; gap:16px; align-items:flex-start;">
+          <div class="icon-wrap" aria-hidden="true">
+            <!-- alert-triangle -->
+            <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div>
+            <h2>UnlockIt is offline.</h2>
+            <p>As of today, <strong>unlockit.ch</strong> has been taken offline following enforcement action under European Union regulations. Access to the former site and its services has been permanently disabled. We are cooperating with the relevant authorities and legal counsel.</p>
+            <div class="chips">
+              <span class="chip">Reference: EU Compliance</span>
+              <span class="chip">Domain: unlockit.ch</span>
+              <span class="chip">Status: Permanently Offline</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Apology letter -->
+      <section class="card fadeup d1" style="margin-top:18px;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+          <!-- heart icon -->
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <h3 style="margin:0;">A sincere apology</h3>
+        </div>
+        <div>
+          <p>To developers, artists, publishers, platform teams, moderators, and to our former community: we are deeply sorry. UnlockIt knowingly facilitated access to unauthorized software and content. That decision harmed the people who create the games and tools we claimed to love, and it undermined the trust that keeps a healthy creative ecosystem alive. No explanation can undo that harm, and we accept full responsibility.</p>
+          <p>We apologize to independent creators whose margins are thin, to studios supporting employees and families, to distributors and storefronts who invest in infrastructure and customer support, and to the broader audience who expect fairness. Our actions created risk and confusion; they incentivized shortcuts over support, and they contributed to a culture that normalizes infringement. We regret this profoundly.</p>
+          <p>Effective immediately, we have ceased all related operations. We will not relaunch under a new name, mirror, or domain. We are cooperating with counsel to comply with applicable EU law and any lawful requests from rights holders or authorities. Where lawful and appropriate, data necessary for compliance will be retained; otherwise, operational data and prior content have been removed.</p>
+          <p>We encourage everyone who visited UnlockIt to choose legitimate channels: purchase from official stores, support creators on platforms that compensate them, and consider community programs that offer demos, trials, or open-source alternatives. If you can, fund the work you enjoy. If you cannot, please explore the many legal free options and sales offered by reputable platforms.</p>
+          <p>Finally, to anyone misled by our messaging in the past: we are sorry. Our previous framing downplayed real consequences. We are committed to learning from this, and to not repeat these mistakes.</p>
+          <p>— The former UnlockIt team</p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="fadeup d2" style="margin-top:18px;">
+        <div class="grid">
+          <div class="card">
+            <div class="faq">
+              <div style="display:flex; align-items:center; gap:8px;">
+                <!-- gavel icon -->
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 12-8.5 8.5"/><rect x="2" y="19" width="20" height="3" rx="1"/><path d="m14 12 6.3-6.3a2.1 2.1 0 0 0-3-3L11 9"/><path d="m16 4 4 4"/></svg>
+                <h4>Why is the site offline?</h4>
+              </div>
+              <p class="muted">The domain <strong>unlockit.ch</strong> has been taken offline following enforcement under EU regulations. Services previously available through this domain have been disabled and will not return.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="faq">
+              <div style="display:flex; align-items:center; gap:8px;">
+                <!-- shield-check -->
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+                <h4>Will my data be deleted?</h4>
+              </div>
+              <p class="muted">We have removed site content and non-essential operational data. Any data required for legal compliance may be retained as advised by counsel. We are not collecting new data and there is no user login.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="faq">
+              <div style="display:flex; align-items:center; gap:8px;">
+                <!-- globe icon -->
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <h4>Will there be a new domain or mirror?</h4>
+              </div>
+              <p class="muted">No. We will not create mirrors, forks, or successor projects. Any site or profile claiming to be an UnlockIt relaunch is unaffiliated.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="faq">
+              <div style="display:flex; align-items:center; gap:8px;">
+                <!-- mail icon -->
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" ry="2"/><path d="m3 7 9 6 9-6"/></svg>
+                <h4>How can rights holders reach you?</h4>
+              </div>
+              <p class="muted">If you are a rights holder or authority with a lawful request, please contact our legal point of contact at <span class="mono">legal@unlockit.ch</span>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Legal alternatives -->
+      <section class="card fadeup d3" style="margin-top:18px;">
+        <h3 style="margin-bottom:10px;">Support creators — choose legal options</h3>
+        <div class="list">
+          <div class="pill">Official publisher stores</div>
+          <div class="pill">Steam · GOG · itch.io · Epic</div>
+          <div class="pill">Open-source & freeware projects</div>
+          <div class="pill">Demos, trials, and sales</div>
+          <div class="pill">Library & educational programs</div>
+          <div class="pill">Creator Patreon & community funds</div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© <span id="y"></span> unlockit.ch — Compliance Notice</p>
+        <p class="muted">This page is provided for transparency. It is not legal advice. Any future statements will be published here.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
